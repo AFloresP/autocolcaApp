@@ -3,20 +3,19 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Galeria de Fotos
-    </ion-title>
+    <ion-title>Restaurantes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen>
   <ion-list>
-    <ion-item *ngFor="let image of gallery_ar">
+    <ion-item *ngFor="let restaurant of restaurants_ar">
       <ion-card>
-        <img [src]="image.url" />
         <ion-card-header>
-          <ion-card-title>{{image.name}}</ion-card-title>
+          <ion-card-subtitle>{{ restaurant.address }}</ion-card-subtitle>
+          <ion-card-title>{{ restaurant.name }}</ion-card-title>
         </ion-card-header>
+        <ion-card-content>{{ restaurant.typeFoods }}</ion-card-content>
       </ion-card>
     </ion-item>
   </ion-list>
