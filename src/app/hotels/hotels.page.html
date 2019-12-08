@@ -3,22 +3,21 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Restaurantes</ion-title>
+    <ion-title>Hoteles</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen>
   <ion-list>
-    <ion-item *ngFor="let restaurant of restaurants_ar">
+    <ion-item *ngFor="let hotel of hotels_ar">
       <ion-card>
         <ion-card-header>
-          <ion-card-subtitle>{{ restaurant.address }}</ion-card-subtitle>
-          <ion-card-title>{{ restaurant.name }}</ion-card-title>
+          <ion-card-subtitle>{{ hotel.address }}</ion-card-subtitle>
+          <ion-card-title>{{ hotel.name }}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <h3><b>Comidas</b></h3>
-          {{ restaurant.typeFoods }}
-        </ion-card-content>
+            <h3><b>Servicios</b></h3>
+          {{ hotel.services }}</ion-card-content>
       </ion-card>
     </ion-item>
   </ion-list>

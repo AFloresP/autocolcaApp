@@ -18,7 +18,7 @@ export class AppComponent {
     },
     {
       title: 'Festividades',
-      url: '/list',
+      url: '/festivities',
       icon: 'calendar'
     },
     {
@@ -28,7 +28,7 @@ export class AppComponent {
     },
     {
       title: 'Hoteles',
-      url: '/list',
+      url: '/hotels',
       icon: 'flag'
     }
   ];
